@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neftalí Reyes — Ilustrador</title>
+  <meta name="description" content="Portafolio de ilustración de Neftalí Reyes — Retratos, ilustración digital, acuarela y arte experimental." />
+
+  <!-- ═══════════════════════════════════════════
+       TIPOGRAFÍAS GOOGLE FONTS
+       Bebas Neue  → títulos impactantes
+       Permanent Marker → acento graffiti/artístico
+       Space Mono  → texto técnico / labels
+       Lato        → cuerpo de texto
+  ════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════
+       CURSOR PERSONALIZADO
+  ════════════════════════════════════ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- ════════════════════════════════════
+       PANTALLA DE CARGA (INTRO)
+  ════════════════════════════════════ -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-letters">
+        <span>N</span><span>E</span><span>F</span><span>T</span><span>A</span><span>L</span><span>Í</span>
+      </div>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════
+       NAVBAR STICKY
+  ════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-text">NR</span>
+      <span class="logo-dot">●</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link">Inicio</a></li>
+      <li><a href="#about" class="nav-link">Sobre mí</a></li>
+      <li><a href="#gallery" class="nav-link">Galería</a></li>
+      <li><a href="#skills" class="nav-link">Habilidades</a></li>
+      <li><a href="#manifesto" class="nav-link">Manifiesto</a></li>
+      <li><a href="#contact" class="nav-link nav-cta">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ════════════════════════════════════
+       SECCIÓN 1: HERO
+  ════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <!-- Fondo dinámico con formas abstractas -->
+    <div class="hero-bg">
+      <div class="hero-shape s1"></div>
+      <div class="hero-shape s2"></div>
+      <div class="hero-shape s3"></div>
+      <div class="hero-noise"></div>
+    </div>
+
+    <!-- Imagen hero izquierda -->
+    <div class="hero-image-wrap" data-parallax="0.15">
+      <img src="dani.jpeg" alt="Hansel y Gretel — Ilustración digital de Neftalí Reyes" class="hero-img" />
+      <div class="hero-img-badge">ILUSTRACIÓN TRADICIONAL</div>
+    </div>
+
+    <!-- Contenido textual -->
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">— Portafolio 2026 —</p>
+      <h1 class="hero-name reveal-up delay-1">
+        <span class="line">NEFTALÍ</span>
+        <span class="line accent-stroke">REYES</span>
+      </h1>
+      <p class="hero-tagline reveal-up delay-2">
+        Ilustrador · Retratista · Artista Visual
+      </p>
+      <p class="hero-desc reveal-up delay-3">
+        Creo mundos con lápiz, pigmento y píxel.<br/>
+        Cada trazo es un universo en expansión.
+      </p>
+      <div class="hero-actions reveal-up delay-4">
+        <a href="#gallery" class="btn btn-primary">
+          <span>Ver Portafolio</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-outline">Contactar</a>
+      </div>
+      <!-- Contador decorativo -->
+      <div class="hero-stats reveal-up delay-5">
+        <div class="stat"><span class="stat-n">50+</span><span class="stat-l">Obras</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-n">8+</span><span class="stat-l">Años</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-n">100%</span><span class="stat-l">Pasión</span></div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECCIÓN 2: SOBRE MÍ
+  ════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="about-grid">
+      <!-- Columna izquierda: número decorativo + título -->
+      <div class="about-left">
+        <div class="section-num">01</div>
+        <h2 class="section-title reveal-up">
+          <span class="graffiti">Sobre</span><br/>
+          <span class="big-word">MÍ</span>
+        </h2>
+        <div class="about-deco-line"></div>
+        <div class="about-tags">
+          <span class="tag">Realismo</span>
+          <span class="tag">Acuarela</span>
+          <span class="tag">Digital</span>
+          <span class="tag">Pastel</span>
+          <span class="tag">Carboncillo</span>
+          <img src="original.jpeg" alt="Retrato ojos intensos carboncillo" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Columna derecha: texto + imagen de proceso -->
+      <div class="about-right">
+        <div class="about-quote reveal-up">
+          "El arte no es lo que ves, sino lo que haces ver a los demás."
+        </div>
+        <p class="about-text reveal-up delay-1">
+          Soy <strong>Neftalí Reyes</strong>, ilustrador y artista visual guatemalteco con más de
+          8 años creando retratos expresivos, ilustraciones narrativas y arte digital. Mi trabajo
+          nace de la observación profunda del ser humano: sus emociones, sus historias, su alma.
+        </p>
+        <p class="about-text reveal-up delay-2">
+          Domino técnicas tradicionales como el <strong>carboncillo</strong>, el
+          <strong>pastel</strong> y la <strong>acuarela</strong>, complementadas con herramientas
+          digitales para crear obras que fusionan lo clásico con lo contemporáneo. Cada proyecto
+          es un reto creativo que abordo con rigor técnico y libertad expresiva.
+        </p>
+        <div class="about-process reveal-up delay-3">
+          <img src="img_proceso2.jpg" alt="Proceso creativo en el estudio de Neftalí Reyes" class="about-process-img" />
+          <div class="about-process-label">
+            <span>PROCESO</span>
+            <span>EN ESTUDIO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECCIÓN 3: GALERÍA DE ILUSTRACIONES
+  ════════════════════════════════════ -->
+  <section class="gallery" id="gallery">
+    <div class="gallery-header">
+      <div class="section-num">02</div>
+      <h2 class="section-title reveal-up">
+        <span class="graffiti">Galería</span><br/>
+        <span class="big-word">OBRAS</span>
+      </h2>
+      <!-- Filtros de categoría -->
+      <div class="gallery-filters reveal-up delay-1">
+        <button class="filter-btn active" data-filter="all">TODO</button>
+        <button class="filter-btn" data-filter="digital">DIGITAL</button>
+        <button class="filter-btn" data-filter="retrato">RETRATO</button>
+        <button class="filter-btn" data-filter="acuarela">ACUARELA</button>
+        <button class="filter-btn" data-filter="proceso">PROCESO</button>
+      </div>
+    </div>
+
+    <!-- Grid tipo collage asimétrico -->
+    <div class="gallery-grid" id="galleryGrid">
+
+      <!-- Obra 1: Hansel y Gretel — GRANDE -->
+      <div class="gallery-item gi-large reveal-up" data-category="digital" data-index="0">
+        <div class="gi-inner">
+          <img src="hansel.jpg" alt="Hansel y Gretel" loading="lazy" />
+          <div class="gi-overlay">
+            <div class="gi-info">
+              <span class="gi-cat">Ilustración Digital</span>
+              <h3 class="gi-title">Hansel y Gretel</h3>
+              <p class="gi-desc">Ilustración narrativa inspirada en el cuento clásico. Casa de dulces en un bosque encantado, con detalle minucioso en texturas y atmósfera mágica. Técnica digital con pinceladas orgánicas.</p>
+              <button class="gi-btn" onclick="openLightbox(0)">
+                <i class="fas fa-expand"></i> Ver obra
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Obra 2: La Niña -->
+      <div class="gallery-item gi-medium reveal-up delay-1" data-category="retrato" data-index="1">
+        <div class="gi-inner">
+          <img src="img_payaso.jpg" alt="Retrato payaso al pastel" loading="lazy" />
+          <div class="gi-overlay">
+            <div class="gi-info">
+              <span class="gi-cat">Grafito sobre papel</span>
+              <h3 class="gi-title">La Niña</h3>
+              <p class="gi-desc">Retrato infantil en lápiz grafito. La intensidad de los ojos captura la pureza y la curiosidad de la infancia con un realismo impactante.</p>
+              <button class="gi-btn" onclick="openLightbox(1)">
+                <i class="fas fa-expand"></i> Ver obra
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Obra 3: Payaso -->
+      <div class="gallery-item gi-small reveal-up delay-2" data-category="retrato" data-index="2">
+        <div class="gi-inner">
+          <img src="img_retrato_nina.jpg" alt="Retrato infantil lápiz" loading="lazy" />
+          <div class="gi-overlay">
+            <div class="gi-info">
+              <span class="gi-cat">Pastel Seco</span>
+              <h3 class="gi-title">El Payaso</h3>
+              <p class="gi-desc">Retrato al pastel seco de un payaso clásico. Estudio de color y expresión facial con fondos contrastados entre cálido y oscuro. Emotivo y lleno de vida.</p>
+              <button class="gi-btn" onclick="openLightbox(2)">
+                <i class="fas fa-expand"></i> Ver obra
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Obra 4: Inocencia-->
+      <div class="gallery-item gi-tall reveal-up delay-1" data-category="retrato" data-index="3">
+        <div class="gi-inner">
+          <img src="img_acuarela.jpg" alt="Retrato acuarela mujer con flor" loading="lazy" />
+          <div class="gi-overlay">
+            <div class="gi-info">
+              <span class="gi-cat">Grafito</span>
+              <h3 class="gi-title">Inocencia</h3>
+              <p class="gi-desc">Retrato infantil en carboncillo recién terminado, enmarcado en madera de roble. El proceso como parte de la obra: lápices Faber-Castell y la esencia del artista en su espacio.</p>
+              <button class="gi-btn" onclick="openLightbox(3)">
+                <i class="fas fa-expand"></i> Ver obra
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Obra 5: Acuarela -->
+      <div class="gallery-item gi-small reveal-up delay-2" data-category="acuarela" data-index="4">
+        <div class="gi-inner">
+          <img src="img_proceso1.jpg" alt="Proceso retrato enmarcado" loading="lazy" />
+          <div class="gi-overlay">
+            <div class="gi-info">
+              <span class="gi-cat">Behind the Scenes</span>
+              <h3 class="gi-title">Del Estudio</h3>
+              <p class="gi-desc">Retrato en acuarela de una mujer sonriente con turbante floral. Explosión de color y vitalidad que celebra la diversidad y la alegría con técnica húmeda impecable.</p>
+              <button class="gi-btn" onclick="openLightbox(4)">
+                <i class="fas fa-expand"></i> Ver obra
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Obra 6: Proceso angular -->
+      <div class="gallery-item gi-medium reveal-up delay-3" data-category="proceso" data-index="5">
+        <div class="gi-inner">
+          <img src="img_proceso2.jpg" alt="Proceso angular retrato" loading="lazy" />
+          <div class="gi-overlay">
+            <div class="gi-info">
+              <span class="gi-cat">Proceso Artístico</span>
+              <h3 class="gi-title">Anatomía del Arte</h3>
+              <p class="gi-desc">Vista angular del estudio con retrato en proceso. El muñeco articulado, los lápices en reposo y las virutas de grafito cuentan la historia detrás de cada obra.</p>
+              <button class="gi-btn" onclick="openLightbox(5)">
+                <i class="fas fa-expand"></i> Ver obra
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Obra 7: Retrato dramático femenino -->
+      <div class="gallery-item gi-tall reveal-up delay-2" data-category="retrato" data-index="6">
+        <div class="gi-inner">
+          <img src="img_retrato_drama.jpg" alt="Retrato dramático femenino" loading="lazy" />
+          <div class="gi-overlay">
+            <div class="gi-info">
+              <span class="gi-cat">Carboncillo</span>
+              <h3 class="gi-title">Fragmentos</h3>
+              <p class="gi-desc">Retrato femenino en carboncillo visto a través de pinceles. La fragmentación visual añade profundidad narrativa: el arte que se observa a sí mismo, encuadrado en luz dorada.</p>
+              <button class="gi-btn" onclick="openLightbox(6)">
+                <i class="fas fa-expand"></i> Ver obra
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Obra 8: Retrato ojos intensos -->
+      <div class="gallery-item gi-large reveal-up delay-1" data-category="retrato" data-index="7">
+        <div class="gi-inner">
+          <img src="dani.jpeg" alt="Retrato ojos intensos carboncillo" loading="lazy" />
+          <div class="gi-overlay">
+            <div class="gi-info">
+              <span class="gi-cat">Carboncillo · Obra mayor</span>
+              <h3 class="gi-title">Abismo</h3>
+              <p class="gi-desc">Retrato frontal hiperrealista en carboncillo. Los ojos, enormes y expresivos, encierran todo un universo emocional. Dominio absoluto del claroscuro y la textura de la piel.</p>
+              <button class="gi-btn" onclick="openLightbox(7)">
+                <i class="fas fa-expand"></i> Ver obra
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /gallery-grid -->
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECCIÓN 4: PROYECTOS DESTACADOS
+  ════════════════════════════════════ -->
+  <section class="projects" id="projects">
+    <div class="projects-header">
+      <div class="section-num">03</div>
+      <h2 class="section-title reveal-up">
+        <span class="graffiti">Proyectos</span><br/>
+        <span class="big-word">DESTACADOS</span>
+      </h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal-up" style="--card-color: #E63022;">
+        <div class="project-card-num">01</div>
+        <div class="project-card-img">
+          <img src="hansel.jpg" alt="Serie Cuentos Clásicos" />
+        </div>
+        <div class="project-card-body">
+          <span class="project-tag">Ilustración Digital · 2024</span>
+          <h3 class="project-title">Serie Cuentos Clásicos</h3>
+          <p class="project-desc">Reinterpretación visual de cuentos universales con técnica digital de alta complejidad. "Hansel y Gretel" como pieza insignia de la serie.</p>
+          <div class="project-meta">
+            <span><i class="fas fa-layer-group"></i> Digital · Narrativo</span>
+            <span><i class="fas fa-clock"></i> +40 hrs / obra</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up delay-1" style="--card-color: #FF7A00;">
+        <div class="project-card-num">02</div>
+        <div class="project-card-img">
+          <img src="img_acuarela.jpg" alt="Retratos de Alma" />
+        </div>
+        <div class="project-card-body">
+          <span class="project-tag">Acuarela · Serie 2023</span>
+          <h3 class="project-title">Retratos</h3>
+          <p class="project-desc">Serie de retratos en acuarela que exploran la identidad cultural y la alegría humana. Vibrantes, expresivos y llenos de color tropical.</p>
+          <div class="project-meta">
+            <span><i class="fas fa-palette"></i> Acuarela · Retrato</span>
+            <span><i class="fas fa-images"></i> 12 obras</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up delay-2" style="--card-color: #F5C800;">
+        <div class="project-card-num">03</div>
+        <div class="project-card-img">
+          <img src="dani.jpeg" alt="Hiperrealismo en Carboncillo" />
+        </div>
+        <div class="project-card-body">
+          <span class="project-tag">Carboncillo · Técnica Mixta</span>
+          <h3 class="project-title">Hiperrealismo Puro</h3>
+          <p class="project-desc">Exploración del límite entre fotografía y dibujo. Retratos de alto impacto emocional ejecutados exclusivamente con carboncillo y grafito.</p>
+          <div class="project-meta">
+            <span><i class="fas fa-pencil-alt"></i> Carboncillo</span>
+            <span><i class="fas fa-star"></i> Premio Arte GT 2023</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECCIÓN 5: HABILIDADES & SOFTWARE
+  ════════════════════════════════════ -->
+  <section class="skills" id="skills">
+    <div class="skills-header">
+      <div class="section-num">04</div>
+      <h2 class="section-title reveal-up">
+        <span class="graffiti">Habilidades</span><br/>
+        <span class="big-word">Y TÉCNICAS</span>
+      </h2>
+    </div>
+
+    <div class="skills-layout">
+      <!-- Barras de habilidades -->
+      <div class="skills-bars">
+        <div class="skill-item reveal-up" data-pct="95">
+          <div class="skill-header">
+            <span class="skill-name">Retrato Realista</span>
+            <span class="skill-pct">95%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 95%"></div></div>
+        </div>
+        <div class="skill-item reveal-up delay-1" data-pct="90">
+          <div class="skill-header">
+            <span class="skill-name">Carboncillo & Grafito</span>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 90%"></div></div>
+        </div>
+        <div class="skill-item reveal-up delay-2" data-pct="85">
+          <div class="skill-header">
+            <span class="skill-name">Acuarela</span>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div>
+        </div>
+        <div class="skill-item reveal-up delay-3" data-pct="88">
+          <div class="skill-header">
+            <span class="skill-name">Ilustración Digital</span>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 88%"></div></div>
+        </div>
+        <div class="skill-item reveal-up delay-4" data-pct="80">
+          <div class="skill-header">
+            <span class="skill-name">Pastel Seco</span>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 80%"></div></div>
+        </div>
+        <div class="skill-item reveal-up delay-5" data-pct="75">
+          <div class="skill-header">
+            <span class="skill-name">Diseño de Composición</span>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 75%"></div></div>
+        </div>
+      </div>
+
+      <!-- Tarjetas de Software -->
+      <div class="skills-software">
+        <h3 class="software-title reveal-up">Software & Herramientas</h3>
+        <div class="software-grid">
+          <div class="software-card reveal-up delay-1">
+            <i class="fas fa-pen-nib"></i>
+            <span>Procreate</span>
+          </div>
+          <div class="software-card reveal-up delay-2">
+            <i class="fas fa-paint-brush"></i>
+            <span>Photoshop</span>
+          </div>
+          <div class="software-card reveal-up delay-3">
+            <i class="fas fa-vector-square"></i>
+            <span>Illustrator</span>
+          </div>
+          <div class="software-card reveal-up delay-4">
+            <i class="fas fa-pencil"></i>
+            <span>Clip Studio</span>
+          </div>
+          <div class="software-card reveal-up delay-5">
+            <i class="fas fa-layer-group"></i>
+            <span>Krita</span>
+          </div>
+          <div class="software-card reveal-up delay-6">
+            <i class="fas fa-camera"></i>
+            <span>Lightroom</span>
+          </div>
+        </div>
+
+        <!-- Imagen proceso decorativa -->
+        <div class="skills-img-wrap reveal-up delay-2">
+          <img src="img_proceso1.jpg" alt="Herramientas del artista" />
+          <div class="skills-img-tag">FABER-CASTELL · 8B</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECCIÓN 6: MANIFIESTO ARTÍSTICO
+  ════════════════════════════════════ -->
+  <section class="manifesto" id="manifesto">
+    <div class="manifesto-bg">
+      <div class="manifesto-shape m1"></div>
+      <div class="manifesto-shape m2"></div>
+    </div>
+    <div class="manifesto-content">
+      <div class="manifesto-label reveal-up">— Manifiesto —</div>
+      <h2 class="manifesto-text reveal-up delay-1">
+        <span>EL ARTE</span>
+        <span class="mt-accent">NO PIDE</span>
+        <span>PERMISO.</span>
+      </h2>
+      <p class="manifesto-sub reveal-up delay-2">
+        Cada línea es una decisión. Cada sombra, una verdad.<br/>
+        Dibujo porque el silencio tiene forma.
+      </p>
+      <div class="manifesto-signature reveal-up delay-3">Neftalí Reyes</div>
+      <div class="section-num">05</div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECCIÓN 7: CONTACTO
+  ════════════════════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="contact-header">
+      <div class="section-num">06</div>
+      <h2 class="section-title reveal-up">
+        <span class="graffiti">¿Tienes un</span><br/>
+        <span class="big-word">PROYECTO?</span>
+      </h2>
+      <p class="contact-intro reveal-up delay-1">
+        Hablemos. Transformemos tu idea en una obra que impacte.
+      </p>
+    </div>
+
+    <div class="contact-layout">
+      <!-- Formulario -->
+      <form class="contact-form reveal-up" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo</label>
+            <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Tipo de proyecto</label>
+          <select id="subject" name="subject">
+            <option value="">Selecciona una opción...</option>
+            <option value="retrato">Retrato personalizado</option>
+            <option value="ilustracion">Ilustración digital</option>
+            <option value="acuarela">Acuarela</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" placeholder="Cuéntame tu idea..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">
+          <span>Enviar Mensaje</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+        <div class="form-success" id="formSuccess">
+          <i class="fas fa-check-circle"></i> ¡Mensaje enviado! Te respondo pronto.
+        </div>
+      </form>
+
+      <!-- Info de contacto y redes -->
+      <div class="contact-info reveal-up delay-2">
+        <div class="contact-direct">
+          <h3>Contacto Directo</h3>
+          <a href="jobreyes392@gmail.com" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            <span>neftali@arte.gt</span>
+          </a>
+          <a href="https://wa.me/50255986019" target="_blank" rel="noopener" class="contact-link whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span>+502 5598-6019</span>
+          </a>
+        </div>
+
+        <div class="contact-social">
+          <h3>Redes Sociales</h3>
+          <a href="https://www.instagram.com/art_neftali" target="_blank" rel="noopener" class="social-btn instagram">
+            <i class="fab fa-instagram"></i>
+            <div class="social-btn-text">
+              <span class="social-platform">Instagram</span>
+              <span class="social-handle">@art_neftali</span>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square social-arrow"></i>
+          </a>
+          <a href="https://www.behance.net/jobnefreyess" target="_blank" rel="noopener" class="social-btn behance">
+            <i class="fab fa-behance"></i>
+            <div class="social-btn-text">
+              <span class="social-platform">Behance</span>
+              <span class="social-handle">neftali reyes</span>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square social-arrow"></i>
+          </a>
+          <a href="https://wa.me/50255986019" target="_blank" rel="noopener" class="social-btn whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+            <div class="social-btn-text">
+              <span class="social-platform">WhatsApp</span>
+              <span class="social-handle">55986019</span>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square social-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">NR<span class="footer-dot">●</span></div>
+      <p class="footer-copy">© 2026 Neftalí Reyes — Todos los derechos reservados.</p>
+      <p class="footer-made">Hecho con <span style="color:#E63022">♥</span> y grafito</p>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════
+       LIGHTBOX
+  ════════════════════════════════════ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose"><i class="fas fa-times"></i></button>
+    <button class="lb-prev" id="lbPrev"><i class="fas fa-chevron-left"></i></button>
+    <button class="lb-next" id="lbNext"><i class="fas fa-chevron-right"></i></button>
+    <div class="lb-content">
+      <img class="lb-img" id="lbImg" src="" alt="" />
+      <div class="lb-caption" id="lbCaption"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
