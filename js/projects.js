@@ -11,76 +11,137 @@
  */
 const PROJECTS = [
   {
-    id: 'magmarana',
+    id: 'magmaraña',
     title: 'Magmaraña — Diseño de Personaje',
-    categories: ['branding', 'ilustracion'],
+    categories: ['Digital'],
     catLabel: 'Branding · Ilustración',
     img: 'assets/img/project-magmarana.jpg',
     span: 'span-tall',
     client: 'Proyecto Personal',
     year: '2026',
-    tech: 'Procreate, Illustrator',
-    desc: 'Diseño y desarrollo de un personaje original para una identidad de marca con temática de fuego. El proceso incluyó bocetaje de ángulos de cabeza, definición de silueta y paleta cromática antes de llegar al arte final, priorizando una personalidad ruda y dominante en cada trazo.'
+    tech: 'Digital',
+    desc: 'Diseño y desarrollo de un personaje original para un videojuego'
   },
   {
     id: 'hansel-gretel',
     title: 'Hansel y Gretel — Ilustración Editorial',
-    categories: ['editorial', 'ilustracion'],
+    categories: ['Digital'],
     catLabel: 'Editorial · Ilustración',
     img: 'assets/img/project-hansel-gretel.jpg',
     span: 'span-wide',
     client: 'Editorial Cuentos Ilustrados',
-    year: '2025',
-    tech: 'Procreate, Photoshop',
+    year: '2026',
+    tech: 'Digital',
     desc: 'Escena editorial para una reinterpretación del cuento clásico, construida con una paleta cálida y detalles de repostería que refuerzan la atmósfera de fantasía. El encuadre y la composición guían la mirada desde los protagonistas hacia la casita de jengibre como punto focal.'
   },
   {
-    id: 'estudio-geometrico',
+      id: 'Familia',
+    title: 'Familia — Retrato familiar',
+    categories: ['Grafito'],
+    catLabel: 'Retrato con grafito',
+    img: 'assets/img/familia.jpg',
+    span: 'span-tall',
+    client: 'Maria Rossal',
+    year: '2026',
+    tech: 'Grafito',
+    desc: 'Retrato familiar de 4 personas'
+  },
+    {
+      id: 'Payaso',
+    title: 'Payaso',
+    categories: ['Pastel Seco'],
+    catLabel: 'Retrato con pastel seco',
+    img: 'assets/img/payaso.jpg',
+    span: 'span-tall',
+    client: 'Trabajo propio',
+    year: '2025',
+    tech: 'Grafito',
+    desc: 'Retrato de un payaso con pastel seco, con tonos calidos.'
+  },
+  {
+      id: 'Zapato',
+    title: 'Poster - Zapato',
+    categories: ['Acrílico'],
+    catLabel: 'Retrato con pastel seco',
+    img: 'assets/img/zapato.jpg',
+    span: 'span-tall',
+    client: 'Trabajo propio',
+    year: '2025',
+    tech: 'Acrílico',
+    desc: 'Poster de un par de zapatos usando tonos verdes.'
+  },
+   {
+      id: 'Ajedrez',
+    title: 'Poster - Ajedrez',
+    categories: ['Acrílico'],
+    catLabel: 'Retrato con pastel seco',
+    img: 'assets/img/ajedrez.jpg',
+    span: 'span-tall',
+    client: 'Trabajo propio',
+    year: '2025',
+    tech: 'Acrílico',
+    desc: 'Poster de Ajedrez usando tonos calidos.'
+  },
+  {
+    
+    id: 'Rostro-geometrico',
     title: 'Estudio Geométrico — Exploración Cromática',
-    categories: ['branding', 'ilustracion'],
+    categories: ['Acuarela'],
     catLabel: 'Branding · Ilustración',
     img: 'assets/img/project-abstracto.jpg',
     span: 'span-mid',
     client: 'Estudio Personal',
     year: '2025',
-    tech: 'Marcadores, Tinta',
+    tech: 'Acuarela',
     desc: 'Ejercicio de composición abstracta a partir de formas geométricas superpuestas, explorando contraste de color y textura como base para futuros sistemas de identidad visual.'
   },
   {
-    id: 'retrato-panama',
-    title: 'Retrato Panamá — Acuarela',
-    categories: ['ilustracion'],
-    catLabel: 'Ilustración',
+    id: 'Retrato',
+    title: 'Retrato — Acuarela',
+    categories: ['Acuarela'],
+    catLabel: 'Acuarela',
     img: 'assets/img/project-panama-watercolor.jpg',
     span: 'span-mid',
-    client: 'Serie Cultural',
+    client: 'Estudio Personal',
     year: '2025',
-    tech: 'Acuarela, Tinta',
-    desc: 'Retrato en acuarela que celebra el color y la identidad cultural panameña, con especial atención al tratamiento lumínico de la piel y a los textiles florales del tocado.'
+    tech: 'Acuarela',
+    desc: 'Retrato en acuarela que celebra el color y la identidad cultural, con especial atención al tratamiento lumínico de la piel y a los textiles florales del tocado.'
+  },
+  {
+    id: 'Retrato',
+    title: 'Retrato — Grafito',
+    categories: ['Grafito'],
+    catLabel: 'Grafito',
+    img: 'assets/img/niña.jpg',
+    span: 'span-mid',
+    client: 'Encargo',
+    year: '2025',
+    tech: 'Grafito',
+    desc: 'Retrato en grafito, el cliente solicitó que las tonalidades fuera suaves'
   },
   {
     id: 'retrato-grafito-mujer',
     title: 'Retrato a Grafito — Estudio de Rostro',
-    categories: ['ilustracion'],
-    catLabel: 'Ilustración',
+    categories: ['Grafito'],
+    catLabel: 'Grafito',
     img: 'assets/img/project-retrato-mujer.jpg',
     span: 'span-tall',
     client: 'Estudio Personal',
-    year: '2024',
+    year: '2025',
     tech: 'Grafito 3B / 6B',
     desc: 'Estudio de retrato realista a lápiz de grafito, enfocado en el manejo del claroscuro y la construcción progresiva de valores tonales para lograr profundidad en la mirada.'
   },
   {
-    id: 'retrato-infantil',
-    title: 'Retrato Infantil — Grafito',
-    categories: ['ilustracion'],
-    catLabel: 'Ilustración',
+    id: 'Retrato',
+    title: 'Retrato — Grafito',
+    categories: ['Grafito'],
+    catLabel: 'Grafito',
     img: 'assets/img/project-retrato-nina.jpg',
     span: 'span-mid',
     client: 'Encargo Privado',
     year: '2024',
-    tech: 'Grafito 2B / 4B',
-    desc: 'Retrato por encargo centrado en capturar la expresión y ternura del rostro infantil, con un tratamiento suave del cabello y transiciones tonales delicadas.'
+    tech: 'Grafito 3B / 6B',
+    desc: 'Retrato por encargo centrado en capturar la expresión, con un tratamiento suave del cabello y transiciones tonales delicadas.'
   }
 ];
 
