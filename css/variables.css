@@ -1,0 +1,79 @@
+/* ==========================================================================
+   VARIABLES.CSS — Design Tokens
+   Portafolio "Ember" — Diseñador Gráfico
+   Paleta cálida: espresso oscuro + cobre + ámbar, inspirada en brasas y papel.
+   ========================================================================== */
+
+:root {
+  /* ---------- Color: superficies ---------- */
+  --bg-base:        #170D0A;   /* fondo principal, espresso casi negro */
+  --bg-elevated:     #221310;   /* tarjetas, paneles */
+  --bg-elevated-2:   #2C1A15;   /* paneles sobre paneles / hover */
+  --bg-glass:        rgba(44, 26, 21, 0.55);
+  --border-glass:    rgba(227, 164, 93, 0.14);
+
+  /* ---------- Color: acentos cálidos ---------- */
+  --ember-copper:    #C1622B;  /* acento primario */
+  --ember-copper-2:  #9C4A1F;  /* copper oscuro, gradientes */
+  --amber-gold:      #E3A45D;  /* acento secundario / glow */
+  --amber-soft:      #F0C489;  /* highlight suave */
+  --flame-red:       #8C2F1B;  /* detalle profundo, sombras cálidas */
+
+  /* ---------- Color: texto ---------- */
+  --text-primary:    #F5EBDD;  /* blanco cálido */
+  --text-secondary:  #C9B8A8;  /* gris cálido */
+  --text-muted:      #8C7A6B;  /* gris apagado cálido */
+
+  /* ---------- Gradientes ---------- */
+  --grad-ember:      linear-gradient(135deg, var(--ember-copper) 0%, var(--flame-red) 100%);
+  --grad-amber:      linear-gradient(120deg, var(--amber-gold) 0%, var(--ember-copper) 100%);
+  --grad-bg:         radial-gradient(circle at 20% 0%, rgba(193,98,43,0.16) 0%, transparent 45%),
+                      radial-gradient(circle at 85% 20%, rgba(227,164,93,0.10) 0%, transparent 40%),
+                      radial-gradient(circle at 50% 100%, rgba(140,47,27,0.14) 0%, transparent 50%);
+  --grad-glass:      linear-gradient(160deg, rgba(245,235,221,0.06) 0%, rgba(245,235,221,0.015) 100%);
+
+  /* ---------- Tipografía ---------- */
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --font-body:    'Inter', sans-serif;
+  --font-accent:  'Poppins', sans-serif;
+
+  --fs-hero:      clamp(3rem, 9vw, 8rem);
+  --fs-h1:        clamp(2.4rem, 5vw, 4.2rem);
+  --fs-h2:        clamp(1.8rem, 3.4vw, 2.8rem);
+  --fs-h3:        clamp(1.3rem, 2.2vw, 1.7rem);
+  --fs-body:      1rem;
+  --fs-small:     0.85rem;
+  --fs-eyebrow:   0.78rem;
+
+  /* ---------- Espaciado ---------- */
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  2rem;
+  --space-lg:  4rem;
+  --space-xl:  7rem;
+  --space-2xl: 11rem;
+
+  /* ---------- Bordes / radios ---------- */
+  --radius-sm: 8px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  /* ---------- Sombras ---------- */
+  --shadow-soft:  0 20px 60px -20px rgba(0,0,0,0.55);
+  --shadow-glow:  0 0 40px rgba(227,164,93,0.18);
+  --shadow-ember: 0 12px 40px -10px rgba(193,98,43,0.45);
+
+  /* ---------- Blur ---------- */
+  --blur-glass: blur(18px);
+
+  /* ---------- Transiciones ---------- */
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast: 0.25s var(--ease-premium);
+  --t-mid:  0.5s var(--ease-premium);
+  --t-slow: 0.9s var(--ease-premium);
+
+  /* ---------- Layout ---------- */
+  --container-w: 1320px;
+  --nav-h: 84px;
+}

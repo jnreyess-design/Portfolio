@@ -1,0 +1,115 @@
+/* ==========================================================================
+   RESPONSIVE.CSS — Breakpoints
+   Desktop (default) → Laptop 1200px → Tablet 900px → Mobile 600px → Small 380px
+   ========================================================================== */
+
+/* ---------------------------------------------------------------------- */
+/* LAPTOP ≤ 1200px                                                         */
+/* ---------------------------------------------------------------------- */
+@media (max-width: 1200px) {
+  :root { --space-2xl: 8rem; }
+
+  .services-grid { grid-template-columns: repeat(3, 1fr); gap: var(--space-sm); }
+  .testimonials-grid { grid-template-columns: repeat(3, 1fr); gap: var(--space-sm); }
+  .portfolio-grid { gap: var(--space-sm); }
+}
+
+/* ---------------------------------------------------------------------- */
+/* TABLET ≤ 900px                                                          */
+/* ---------------------------------------------------------------------- */
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .nav-toggle { display: flex; }
+
+  .nav-links.is-open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; right: 0;
+    width: min(320px, 80vw);
+    height: 100vh;
+    background: rgba(23,13,10,0.97);
+    backdrop-filter: var(--blur-glass);
+    padding: 7rem var(--space-lg) var(--space-lg);
+    gap: var(--space-md);
+    z-index: 940;
+    border-left: 1px solid var(--border-glass);
+  }
+
+  .about-grid { grid-template-columns: 1fr; }
+  .about-photo-wrap { max-width: 420px; margin: 0 auto var(--space-lg); }
+  .about-stats { grid-template-columns: repeat(2, 1fr); }
+
+  .skills-grid { grid-template-columns: 1fr; }
+
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+  .project-card { grid-column: span 1 !important; }
+  .project-card.span-wide { grid-column: span 2 !important; }
+
+  .testimonials-grid { grid-template-columns: 1fr; }
+
+  .contact-grid { grid-template-columns: 1fr; gap: var(--space-lg); }
+
+  .footer-top { flex-direction: column; }
+}
+
+/* ---------------------------------------------------------------------- */
+/* MOBILE ≤ 600px                                                          */
+/* ---------------------------------------------------------------------- */
+@media (max-width: 600px) {
+  :root {
+    --space-xl: 4.5rem;
+    --space-2xl: 5.5rem;
+    --nav-h: 68px;
+  }
+
+  section { padding: var(--space-xl) 0; }
+
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { justify-content: center; }
+
+  .about-stats { grid-template-columns: 1fr 1fr; }
+  .about-badge { left: 0; bottom: -16px; padding: 0.8rem 1rem; }
+  .about-photo-ring { display: none; }
+
+  .services-grid { grid-template-columns: 1fr; }
+
+  .portfolio-grid { grid-template-columns: 1fr; }
+  .project-card, .project-card.span-wide, .project-card.span-tall, .project-card.span-mid {
+    grid-column: span 1 !important;
+    grid-row: span 20 !important;
+  }
+
+  .modal-meta { grid-template-columns: 1fr 1fr; }
+  .modal-body { padding: var(--space-md); }
+
+  .form-row { grid-template-columns: 1fr; }
+
+  .footer-links { gap: var(--space-md); }
+  .footer-bottom { flex-direction: column; text-align: center; }
+
+  .timeline::before { left: 10px; }
+  .timeline-item { padding-left: 42px; }
+  .timeline-dot { left: 2px; }
+
+  .cursor-dot, .cursor-ring { display: none; }
+  body, a, button { cursor: auto; }
+}
+
+/* ---------------------------------------------------------------------- */
+/* SMALL MOBILE ≤ 380px                                                    */
+/* ---------------------------------------------------------------------- */
+@media (max-width: 380px) {
+  .container { padding: 0 1.1rem; }
+  .about-stats { grid-template-columns: 1fr; }
+  .btn { width: 100%; justify-content: center; }
+}
+
+/* ---------------------------------------------------------------------- */
+/* Pantallas grandes ≥ 1600px                                              */
+/* ---------------------------------------------------------------------- */
+@media (min-width: 1600px) {
+  :root { --container-w: 1480px; }
+}
